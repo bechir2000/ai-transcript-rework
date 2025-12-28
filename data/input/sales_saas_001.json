@@ -1,0 +1,16 @@
+{
+  "transcript_id": "sales_saas_001",
+  "metadata": { "duration": 92.4, "date": "2025-12-10T09:12:00Z", "source": "whisper-large-v3" },
+  "messages": [
+    { "speaker": "speaker_0", "content": "bonjour merci d etre la aujourd hui donc vous cherchez une solution pour les calls", "start_time": 0.0, "end_time": 7.6 },
+    { "speaker": "speaker_1", "content": "oui on a un soucis de qualite sur nos transcript et la diarisation elle est parfois a cote", "start_time": 7.8, "end_time": 15.2 },
+    { "speaker": "speaker_0", "content": "ok super nous on fait ca chez Omogen avec un pipeline qui corrige les errers et on garde les times stamps", "start_time": 15.4, "end_time": 26.7 },
+    { "speaker": "speaker_1", "content": "et niveau conformite vous avez soc two et le sso", "start_time": 26.9, "end_time": 33.8 },
+    { "speaker": "speaker_0", "content": "oui soc2 et sso sur le plan enterpraiz euh enterprise", "start_time": 34.0, "end_time": 40.8 },
+    { "speaker": "speaker_1", "content": "ok et le prix pro cest combien par seat et est ce que ya un mvp rapide", "start_time": 41.0, "end_time": 48.5 },
+    { "speaker": "speaker_0", "content": "alors pro c est 49 euro par suite euh par seat par mois et oui on peut demarer un mvp en 2 semaines", "start_time": 48.7, "end_time": 59.9 },
+    { "speaker": "speaker_1", "content": "dac et pour l integration slack et hub spot", "start_time": 60.1, "end_time": 65.7 },
+    { "speaker": "speaker_0", "content": "slack oui hubspot en beta mais je veux pas dire de betise", "start_time": 65.9, "end_time": 74.0 },
+    { "speaker": "speaker_1", "content": "ok parfait envoyez moi un recap", "start_time": 74.2, "end_time": 78.3 }
+  ]
+}

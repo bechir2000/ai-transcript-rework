@@ -1,0 +1,911 @@
+{
+  "transcript_id": "sales_saas_001",
+  "metadata": {
+    "duration": 92.4,
+    "date": "2025-12-10T09:12:00Z",
+    "source": "whisper-large-v3"
+  },
+  "messages": [
+    {
+      "speaker": "speaker_0",
+      "content": "Bonjour merci d être la aujourd hui donc vous cherchez une solution pour les calls.",
+      "start_time": 0.0,
+      "end_time": 7.6
+    },
+    {
+      "speaker": "speaker_1",
+      "content": "Oui on a un souci de qualité sur nos transcript et la diarisation elle est parfois a cote.",
+      "start_time": 7.8,
+      "end_time": 15.2
+    },
+    {
+      "speaker": "speaker_0",
+      "content": "Ok super nous on fait ca chez Omogen avec un pipeline qui corrige les erreurs et on garde les times stamps.",
+      "start_time": 15.4,
+      "end_time": 26.7
+    },
+    {
+      "speaker": "speaker_1",
+      "content": "Et niveau conformité vous avez soc two et le SSO.",
+      "start_time": 26.9,
+      "end_time": 33.8
+    },
+    {
+      "speaker": "speaker_0",
+      "content": "Oui SOC 2 et SSO sur le plan plan Enterprise euh plan Enterprise.",
+      "start_time": 34.0,
+      "end_time": 40.8
+    },
+    {
+      "speaker": "speaker_1",
+      "content": "Ok et le prix Pro c'est combien par seat et est ce que ya un MVP rapide.",
+      "start_time": 41.0,
+      "end_time": 48.5
+    },
+    {
+      "speaker": "speaker_0",
+      "content": "Alors Pro c est 49 euro par suite euh par seat par mois et oui on peut démarrer un MVP en 2 semaines.",
+      "start_time": 48.7,
+      "end_time": 59.9
+    },
+    {
+      "speaker": "speaker_1",
+      "content": "Dac et pour l'intégration Slack et HubSpot.",
+      "start_time": 60.1,
+      "end_time": 65.7
+    },
+    {
+      "speaker": "speaker_0",
+      "content": "Slack oui HubSpot en beta mais je veux pas dire de betise.",
+      "start_time": 65.9,
+      "end_time": 74.0
+    },
+    {
+      "speaker": "speaker_1",
+      "content": "Ok parfait envoyez moi un recap.",
+      "start_time": 74.2,
+      "end_time": 78.3
+    }
+  ],
+  "qa_report": {
+    "ok": true,
+    "warnings": [],
+    "errors": [],
+    "total_segments": 10,
+    "valid_segments": 10,
+    "invalid_segments_count": 0,
+    "overlaps_detected": 0,
+    "gaps_detected": 0,
+    "large_gaps": [],
+    "overlaps": [],
+    "long_segments": [],
+    "invalid_segments": [],
+    "thresholds": {
+      "gap_threshold_s": 2.0,
+      "long_segment_threshold_s": 25.0
+    }
+  },
+  "context_inferred": {
+    "domain": "sales",
+    "domain_confidence": 0.85,
+    "speaker_role_map": {
+      "speaker_0": "agent",
+      "speaker_1": "client"
+    },
+    "glossary": [
+      {
+        "term": "Omogen",
+        "aliases": [],
+        "confidence": 0.9
+      },
+      {
+        "term": "SOC 2",
+        "aliases": [
+          "soc2"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "term": "SSO",
+        "aliases": [
+          "sso"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "term": "plan Enterprise",
+        "aliases": [
+          "enterpraiz",
+          "enterprise"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "term": "Pro",
+        "aliases": [
+          "pro"
+        ],
+        "confidence": 0.75
+      },
+      {
+        "term": "seat",
+        "aliases": [],
+        "confidence": 0.78
+      },
+      {
+        "term": "MVP",
+        "aliases": [
+          "mvp"
+        ],
+        "confidence": 0.8
+      },
+      {
+        "term": "Slack",
+        "aliases": [
+          "slack"
+        ],
+        "confidence": 0.9
+      },
+      {
+        "term": "HubSpot",
+        "aliases": [
+          "hub spot",
+          "hubspot"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "term": "diarisation",
+        "aliases": [],
+        "confidence": 0.72
+      },
+      {
+        "term": "pipeline",
+        "aliases": [],
+        "confidence": 0.72
+      },
+      {
+        "term": "time stamps",
+        "aliases": [],
+        "confidence": 0.72
+      }
+    ],
+    "language_errors": [
+      {
+        "error_type": "spelling",
+        "incorrect_text": "etre",
+        "correct_form": "être",
+        "explanation": "Accent manquant sur le verbe « être ».",
+        "confidence": 0.95
+      },
+      {
+        "error_type": "agreement",
+        "incorrect_text": "un soucis",
+        "correct_form": "un souci",
+        "explanation": "« souci » est invariable au singulier ; « soucis » est le pluriel.",
+        "confidence": 0.9
+      },
+      {
+        "error_type": "spelling",
+        "incorrect_text": "qualite",
+        "correct_form": "qualité",
+        "explanation": "Accent manquant sur « qualité ».",
+        "confidence": 0.9
+      },
+      {
+        "error_type": "agreement",
+        "incorrect_text": "les transcript",
+        "correct_form": "les transcripts",
+        "explanation": "Nom au pluriel après « les » : ajout du « s ».",
+        "confidence": 0.85
+      },
+      {
+        "error_type": "spelling",
+        "incorrect_text": "errers",
+        "correct_form": "erreurs",
+        "explanation": "Orthographe incorrecte : « erreurs » avec « eu ».",
+        "confidence": 0.9
+      },
+      {
+        "error_type": "spelling",
+        "incorrect_text": "conformite",
+        "correct_form": "conformité",
+        "explanation": "Accent manquant sur « conformité ».",
+        "confidence": 0.9
+      },
+      {
+        "error_type": "spelling",
+        "incorrect_text": "cest",
+        "correct_form": "c'est",
+        "explanation": "Apostrophe manquante dans « c'est ».",
+        "confidence": 0.9
+      },
+      {
+        "error_type": "spelling",
+        "incorrect_text": "demarer",
+        "correct_form": "démarrer",
+        "explanation": "Orthographe : « démarrer » avec accent et double « r ».",
+        "confidence": 0.95
+      },
+      {
+        "error_type": "spelling",
+        "incorrect_text": "l integration",
+        "correct_form": "l'intégration",
+        "explanation": "Apostrophe manquante et accent manquant sur « intégration ».",
+        "confidence": 0.85
+      }
+    ],
+    "constraints": [
+      "NE PAS inventer de faits.",
+      "NE PAS paraphraser ou réécrire la transcription.",
+      "Chaque hypothèse DOIT inclure 1 à 3 evidence_quotes qui sont des sous-chaînes EXACTES de la transcription.",
+      "En cas d'incertitude: définir une confiance faible et laisser evidence_quotes vide.",
+      "Pour les erreurs de langue: signaler UNIQUEMENT les erreurs claires, PAS les expressions familières ou les structures de langage parlé naturel."
+    ]
+  },
+  "context_report": {
+    "domain_evidence": [
+      "ok et le prix pro cest combien par seat et est ce que ya un mvp rapide",
+      "alors pro c est 49 euro par suite euh par seat par mois",
+      "et niveau conformite vous avez soc two et le sso"
+    ],
+    "participants": [
+      {
+        "speaker": "speaker_0",
+        "role": "agent",
+        "confidence": 0.78,
+        "evidence": [
+          "ok super nous on fait ca chez Omogen avec un pipeline qui corrige les errers et on garde les times stamps",
+          "alors pro c est 49 euro par suite euh par seat par mois et oui on peut demarer un mvp en 2 semaines"
+        ]
+      },
+      {
+        "speaker": "speaker_1",
+        "role": "client",
+        "confidence": 0.78,
+        "evidence": [
+          "oui on a un soucis de qualite sur nos transcript et la diarisation elle est parfois a cote",
+          "ok et le prix pro cest combien par seat et est ce que ya un mvp rapide"
+        ]
+      }
+    ],
+    "glossary_evidence": [
+      {
+        "term": "Omogen",
+        "evidence": [
+          "ok super nous on fait ca chez Omogen avec un pipeline qui corrige les errers et on garde les times stamps"
+        ]
+      },
+      {
+        "term": "SOC 2",
+        "evidence": [
+          "et niveau conformite vous avez soc two et le sso",
+          "oui soc2 et sso sur le plan enterpraiz euh enterprise"
+        ]
+      },
+      {
+        "term": "SSO",
+        "evidence": [
+          "et niveau conformite vous avez soc two et le sso",
+          "oui soc2 et sso sur le plan enterpraiz euh enterprise"
+        ]
+      },
+      {
+        "term": "plan Enterprise",
+        "evidence": [
+          "oui soc2 et sso sur le plan enterpraiz euh enterprise"
+        ]
+      },
+      {
+        "term": "Pro",
+        "evidence": [
+          "ok et le prix pro cest combien par seat et est ce que ya un mvp rapide",
+          "alors pro c est 49 euro par suite euh par seat par mois"
+        ]
+      },
+      {
+        "term": "seat",
+        "evidence": [
+          "ok et le prix pro cest combien par seat et est ce que ya un mvp rapide",
+          "alors pro c est 49 euro par suite euh par seat par mois"
+        ]
+      },
+      {
+        "term": "MVP",
+        "evidence": [
+          "ok et le prix pro cest combien par seat et est ce que ya un mvp rapide",
+          "alors pro c est 49 euro par suite euh par seat par mois et oui on peut demarer un mvp en 2 semaines"
+        ]
+      },
+      {
+        "term": "Slack",
+        "evidence": [
+          "dac et pour l integration slack et hub spot",
+          "slack oui hubspot en beta mais je veux pas dire de betise"
+        ]
+      },
+      {
+        "term": "HubSpot",
+        "evidence": [
+          "dac et pour l integration slack et hub spot",
+          "slack oui hubspot en beta mais je veux pas dire de betise"
+        ]
+      },
+      {
+        "term": "diarisation",
+        "evidence": [
+          "oui on a un soucis de qualite sur nos transcript et la diarisation elle est parfois a cote"
+        ]
+      },
+      {
+        "term": "pipeline",
+        "evidence": [
+          "ok super nous on fait ca chez Omogen avec un pipeline qui corrige les errers et on garde les times stamps"
+        ]
+      },
+      {
+        "term": "time stamps",
+        "evidence": [
+          "ok super nous on fait ca chez Omogen avec un pipeline qui corrige les errers et on garde les times stamps"
+        ]
+      }
+    ],
+    "language_errors_detected": [
+      {
+        "error_type": "spelling",
+        "incorrect": "etre",
+        "correct": "être",
+        "explanation": "Accent manquant sur le verbe « être ».",
+        "confidence": 0.95,
+        "evidence": "bonjour merci d etre la aujourd hui donc vous cherchez une solution pour les calls"
+      },
+      {
+        "error_type": "agreement",
+        "incorrect": "un soucis",
+        "correct": "un souci",
+        "explanation": "« souci » est invariable au singulier ; « soucis » est le pluriel.",
+        "confidence": 0.9,
+        "evidence": "oui on a un soucis de qualite sur nos transcript et la diarisation elle est parfois a cote"
+      },
+      {
+        "error_type": "spelling",
+        "incorrect": "qualite",
+        "correct": "qualité",
+        "explanation": "Accent manquant sur « qualité ».",
+        "confidence": 0.9,
+        "evidence": "oui on a un soucis de qualite sur nos transcript et la diarisation elle est parfois a cote"
+      },
+      {
+        "error_type": "agreement",
+        "incorrect": "les transcript",
+        "correct": "les transcripts",
+        "explanation": "Nom au pluriel après « les » : ajout du « s ».",
+        "confidence": 0.85,
+        "evidence": "oui on a un soucis de qualite sur nos transcript et la diarisation elle est parfois a cote"
+      },
+      {
+        "error_type": "spelling",
+        "incorrect": "errers",
+        "correct": "erreurs",
+        "explanation": "Orthographe incorrecte : « erreurs » avec « eu ».",
+        "confidence": 0.9,
+        "evidence": "ok super nous on fait ca chez Omogen avec un pipeline qui corrige les errers et on garde les times stamps"
+      },
+      {
+        "error_type": "spelling",
+        "incorrect": "conformite",
+        "correct": "conformité",
+        "explanation": "Accent manquant sur « conformité ».",
+        "confidence": 0.9,
+        "evidence": "et niveau conformite vous avez soc two et le sso"
+      },
+      {
+        "error_type": "spelling",
+        "incorrect": "cest",
+        "correct": "c'est",
+        "explanation": "Apostrophe manquante dans « c'est ».",
+        "confidence": 0.9,
+        "evidence": "ok et le prix pro cest combien par seat et est ce que ya un mvp rapide"
+      },
+      {
+        "error_type": "spelling",
+        "incorrect": "demarer",
+        "correct": "démarrer",
+        "explanation": "Orthographe : « démarrer » avec accent et double « r ».",
+        "confidence": 0.95,
+        "evidence": "alors pro c est 49 euro par suite euh par seat par mois et oui on peut demarer un mvp en 2 semaines"
+      },
+      {
+        "error_type": "spelling",
+        "incorrect": "l integration",
+        "correct": "l'intégration",
+        "explanation": "Apostrophe manquante et accent manquant sur « intégration ».",
+        "confidence": 0.85,
+        "evidence": "dac et pour l integration slack et hub spot"
+      }
+    ],
+    "evidence_validation": {
+      "missing_quotes": [],
+      "ok": true
+    },
+    "source": "openai_structured_outputs",
+    "model": "gpt-5.2"
+  },
+  "transformation_report": {
+    "editor": {
+      "policy": {
+        "glossary_normalization": true,
+        "language_error_correction": true,
+        "deduplication": true,
+        "light_punctuation": true,
+        "timestamps_preserved": true,
+        "speaker_labels_preserved": true
+      },
+      "total_segments": 10,
+      "segments_modified": 10,
+      "segment_reports": [
+        {
+          "index": 0,
+          "start_time": 0.0,
+          "end_time": 7.6,
+          "speaker": "speaker_0",
+          "original": "bonjour merci d etre la aujourd hui donc vous cherchez une solution pour les calls",
+          "edited": "Bonjour merci d être la aujourd hui donc vous cherchez une solution pour les calls.",
+          "changed": true,
+          "diagnostics": {
+            "issues": [
+              "missing_punctuation"
+            ],
+            "aliases_detected": [],
+            "numbers_found": []
+          },
+          "operations": [
+            {
+              "op": "language_error_fix",
+              "detail": "'etre' → 'être'",
+              "before": "bonjour merci d etre la aujourd hui donc vous cherchez une solution pour les calls",
+              "after": "bonjour merci d être la aujourd hui donc vous cherchez une solution pour les calls",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
+              "op": "punctuation",
+              "detail": "Capitalization + ending punctuation",
+              "before": "bonjour merci d être la aujourd hui donc vous cherchez une solution pour les calls",
+              "after": "Bonjour merci d être la aujourd hui donc vous cherchez une solution pour les calls.",
+              "confidence": 0.8,
+              "source": "rule"
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "start_time": 7.8,
+          "end_time": 15.2,
+          "speaker": "speaker_1",
+          "original": "oui on a un soucis de qualite sur nos transcript et la diarisation elle est parfois a cote",
+          "edited": "Oui on a un souci de qualité sur nos transcript et la diarisation elle est parfois a cote.",
+          "changed": true,
+          "diagnostics": {
+            "issues": [
+              "missing_punctuation"
+            ],
+            "aliases_detected": [],
+            "numbers_found": []
+          },
+          "operations": [
+            {
+              "op": "language_error_fix",
+              "detail": "'un soucis' → 'un souci'",
+              "before": "oui on a un soucis de qualite sur nos transcript et la diarisation elle est parfois a cote",
+              "after": "oui on a un souci de qualite sur nos transcript et la diarisation elle est parfois a cote",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
+              "op": "language_error_fix",
+              "detail": "'qualite' → 'qualité'",
+              "before": "oui on a un souci de qualite sur nos transcript et la diarisation elle est parfois a cote",
+              "after": "oui on a un souci de qualité sur nos transcript et la diarisation elle est parfois a cote",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
+              "op": "punctuation",
+              "detail": "Capitalization + ending punctuation",
+              "before": "oui on a un souci de qualité sur nos transcript et la diarisation elle est parfois a cote",
+              "after": "Oui on a un souci de qualité sur nos transcript et la diarisation elle est parfois a cote.",
+              "confidence": 0.8,
+              "source": "rule"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "start_time": 15.4,
+          "end_time": 26.7,
+          "speaker": "speaker_0",
+          "original": "ok super nous on fait ca chez Omogen avec un pipeline qui corrige les errers et on garde les times stamps",
+          "edited": "Ok super nous on fait ca chez Omogen avec un pipeline qui corrige les erreurs et on garde les times stamps.",
+          "changed": true,
+          "diagnostics": {
+            "issues": [
+              "missing_punctuation"
+            ],
+            "aliases_detected": [],
+            "numbers_found": []
+          },
+          "operations": [
+            {
+              "op": "language_error_fix",
+              "detail": "'errers' → 'erreurs'",
+              "before": "ok super nous on fait ca chez Omogen avec un pipeline qui corrige les errers et on garde les times stamps",
+              "after": "ok super nous on fait ca chez Omogen avec un pipeline qui corrige les erreurs et on garde les times stamps",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
+              "op": "punctuation",
+              "detail": "Capitalization + ending punctuation",
+              "before": "ok super nous on fait ca chez Omogen avec un pipeline qui corrige les erreurs et on garde les times stamps",
+              "after": "Ok super nous on fait ca chez Omogen avec un pipeline qui corrige les erreurs et on garde les times stamps.",
+              "confidence": 0.8,
+              "source": "rule"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "start_time": 26.9,
+          "end_time": 33.8,
+          "speaker": "speaker_1",
+          "original": "et niveau conformite vous avez soc two et le sso",
+          "edited": "Et niveau conformité vous avez soc two et le SSO.",
+          "changed": true,
+          "diagnostics": {
+            "issues": [
+              "missing_punctuation"
+            ],
+            "aliases_detected": [],
+            "numbers_found": []
+          },
+          "operations": [
+            {
+              "op": "glossary_normalization",
+              "detail": "'sso' → 'SSO'",
+              "before": "et niveau conformite vous avez soc two et le sso",
+              "after": "et niveau conformite vous avez soc two et le SSO",
+              "confidence": 0.9,
+              "source": "glossary"
+            },
+            {
+              "op": "language_error_fix",
+              "detail": "'conformite' → 'conformité'",
+              "before": "et niveau conformite vous avez soc two et le SSO",
+              "after": "et niveau conformité vous avez soc two et le SSO",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
+              "op": "punctuation",
+              "detail": "Capitalization + ending punctuation",
+              "before": "et niveau conformité vous avez soc two et le SSO",
+              "after": "Et niveau conformité vous avez soc two et le SSO.",
+              "confidence": 0.8,
+              "source": "rule"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "start_time": 34.0,
+          "end_time": 40.8,
+          "speaker": "speaker_0",
+          "original": "oui soc2 et sso sur le plan enterpraiz euh enterprise",
+          "edited": "Oui SOC 2 et SSO sur le plan plan Enterprise euh plan Enterprise.",
+          "changed": true,
+          "diagnostics": {
+            "issues": [
+              "missing_punctuation",
+              "glossary_aliases_found_3"
+            ],
+            "aliases_detected": [
+              {
+                "alias": "soc2",
+                "canonical": "SOC 2"
+              },
+              {
+                "alias": "enterpraiz",
+                "canonical": "plan Enterprise"
+              },
+              {
+                "alias": "enterprise",
+                "canonical": "plan Enterprise"
+              }
+            ],
+            "numbers_found": [
+              "2"
+            ]
+          },
+          "operations": [
+            {
+              "op": "glossary_normalization",
+              "detail": "'enterpraiz' → 'plan Enterprise'",
+              "before": "oui soc2 et sso sur le plan enterpraiz euh enterprise",
+              "after": "oui soc2 et sso sur le plan plan Enterprise euh enterprise",
+              "confidence": 0.9,
+              "source": "glossary"
+            },
+            {
+              "op": "glossary_normalization",
+              "detail": "'enterprise' → 'plan Enterprise'",
+              "before": "oui soc2 et sso sur le plan plan Enterprise euh enterprise",
+              "after": "oui soc2 et sso sur le plan plan plan Enterprise euh plan Enterprise",
+              "confidence": 0.9,
+              "source": "glossary"
+            },
+            {
+              "op": "glossary_normalization",
+              "detail": "'soc2' → 'SOC 2'",
+              "before": "oui soc2 et sso sur le plan plan plan Enterprise euh plan Enterprise",
+              "after": "oui SOC 2 et sso sur le plan plan plan Enterprise euh plan Enterprise",
+              "confidence": 0.9,
+              "source": "glossary"
+            },
+            {
+              "op": "glossary_normalization",
+              "detail": "'sso' → 'SSO'",
+              "before": "oui SOC 2 et sso sur le plan plan plan Enterprise euh plan Enterprise",
+              "after": "oui SOC 2 et SSO sur le plan plan plan Enterprise euh plan Enterprise",
+              "confidence": 0.9,
+              "source": "glossary"
+            },
+            {
+              "op": "deduplication",
+              "detail": "Removed immediate repetition",
+              "before": "oui SOC 2 et SSO sur le plan plan plan Enterprise euh plan Enterprise",
+              "after": "oui SOC 2 et SSO sur le plan plan Enterprise euh plan Enterprise",
+              "confidence": 0.9,
+              "source": "rule"
+            },
+            {
+              "op": "punctuation",
+              "detail": "Capitalization + ending punctuation",
+              "before": "oui SOC 2 et SSO sur le plan plan Enterprise euh plan Enterprise",
+              "after": "Oui SOC 2 et SSO sur le plan plan Enterprise euh plan Enterprise.",
+              "confidence": 0.8,
+              "source": "rule"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "start_time": 41.0,
+          "end_time": 48.5,
+          "speaker": "speaker_1",
+          "original": "ok et le prix pro cest combien par seat et est ce que ya un mvp rapide",
+          "edited": "Ok et le prix Pro c'est combien par seat et est ce que ya un MVP rapide.",
+          "changed": true,
+          "diagnostics": {
+            "issues": [
+              "missing_punctuation"
+            ],
+            "aliases_detected": [],
+            "numbers_found": []
+          },
+          "operations": [
+            {
+              "op": "glossary_normalization",
+              "detail": "'pro' → 'Pro'",
+              "before": "ok et le prix pro cest combien par seat et est ce que ya un mvp rapide",
+              "after": "ok et le prix Pro cest combien par seat et est ce que ya un mvp rapide",
+              "confidence": 0.9,
+              "source": "glossary"
+            },
+            {
+              "op": "glossary_normalization",
+              "detail": "'mvp' → 'MVP'",
+              "before": "ok et le prix Pro cest combien par seat et est ce que ya un mvp rapide",
+              "after": "ok et le prix Pro cest combien par seat et est ce que ya un MVP rapide",
+              "confidence": 0.9,
+              "source": "glossary"
+            },
+            {
+              "op": "language_error_fix",
+              "detail": "'cest' → 'c'est'",
+              "before": "ok et le prix Pro cest combien par seat et est ce que ya un MVP rapide",
+              "after": "ok et le prix Pro c'est combien par seat et est ce que ya un MVP rapide",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
+              "op": "punctuation",
+              "detail": "Capitalization + ending punctuation",
+              "before": "ok et le prix Pro c'est combien par seat et est ce que ya un MVP rapide",
+              "after": "Ok et le prix Pro c'est combien par seat et est ce que ya un MVP rapide.",
+              "confidence": 0.8,
+              "source": "rule"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "start_time": 48.7,
+          "end_time": 59.9,
+          "speaker": "speaker_0",
+          "original": "alors pro c est 49 euro par suite euh par seat par mois et oui on peut demarer un mvp en 2 semaines",
+          "edited": "Alors Pro c est 49 euro par suite euh par seat par mois et oui on peut démarrer un MVP en 2 semaines.",
+          "changed": true,
+          "diagnostics": {
+            "issues": [
+              "missing_punctuation"
+            ],
+            "aliases_detected": [],
+            "numbers_found": [
+              "49",
+              "2"
+            ]
+          },
+          "operations": [
+            {
+              "op": "glossary_normalization",
+              "detail": "'pro' → 'Pro'",
+              "before": "alors pro c est 49 euro par suite euh par seat par mois et oui on peut demarer un mvp en 2 semaines",
+              "after": "alors Pro c est 49 euro par suite euh par seat par mois et oui on peut demarer un mvp en 2 semaines",
+              "confidence": 0.9,
+              "source": "glossary"
+            },
+            {
+              "op": "glossary_normalization",
+              "detail": "'mvp' → 'MVP'",
+              "before": "alors Pro c est 49 euro par suite euh par seat par mois et oui on peut demarer un mvp en 2 semaines",
+              "after": "alors Pro c est 49 euro par suite euh par seat par mois et oui on peut demarer un MVP en 2 semaines",
+              "confidence": 0.9,
+              "source": "glossary"
+            },
+            {
+              "op": "language_error_fix",
+              "detail": "'demarer' → 'démarrer'",
+              "before": "alors Pro c est 49 euro par suite euh par seat par mois et oui on peut demarer un MVP en 2 semaines",
+              "after": "alors Pro c est 49 euro par suite euh par seat par mois et oui on peut démarrer un MVP en 2 semaines",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
+              "op": "punctuation",
+              "detail": "Capitalization + ending punctuation",
+              "before": "alors Pro c est 49 euro par suite euh par seat par mois et oui on peut démarrer un MVP en 2 semaines",
+              "after": "Alors Pro c est 49 euro par suite euh par seat par mois et oui on peut démarrer un MVP en 2 semaines.",
+              "confidence": 0.8,
+              "source": "rule"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "start_time": 60.1,
+          "end_time": 65.7,
+          "speaker": "speaker_1",
+          "original": "dac et pour l integration slack et hub spot",
+          "edited": "Dac et pour l'intégration Slack et HubSpot.",
+          "changed": true,
+          "diagnostics": {
+            "issues": [
+              "missing_punctuation",
+              "glossary_aliases_found_1"
+            ],
+            "aliases_detected": [
+              {
+                "alias": "hub spot",
+                "canonical": "HubSpot"
+              }
+            ],
+            "numbers_found": []
+          },
+          "operations": [
+            {
+              "op": "glossary_normalization",
+              "detail": "'hub spot' → 'HubSpot'",
+              "before": "dac et pour l integration slack et hub spot",
+              "after": "dac et pour l integration slack et HubSpot",
+              "confidence": 0.9,
+              "source": "glossary"
+            },
+            {
+              "op": "glossary_normalization",
+              "detail": "'slack' → 'Slack'",
+              "before": "dac et pour l integration slack et HubSpot",
+              "after": "dac et pour l integration Slack et HubSpot",
+              "confidence": 0.9,
+              "source": "glossary"
+            },
+            {
+              "op": "language_error_fix",
+              "detail": "'l integration' → 'l'intégration'",
+              "before": "dac et pour l integration Slack et HubSpot",
+              "after": "dac et pour l'intégration Slack et HubSpot",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
+              "op": "punctuation",
+              "detail": "Capitalization + ending punctuation",
+              "before": "dac et pour l'intégration Slack et HubSpot",
+              "after": "Dac et pour l'intégration Slack et HubSpot.",
+              "confidence": 0.8,
+              "source": "rule"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "start_time": 65.9,
+          "end_time": 74.0,
+          "speaker": "speaker_0",
+          "original": "slack oui hubspot en beta mais je veux pas dire de betise",
+          "edited": "Slack oui HubSpot en beta mais je veux pas dire de betise.",
+          "changed": true,
+          "diagnostics": {
+            "issues": [
+              "missing_punctuation"
+            ],
+            "aliases_detected": [],
+            "numbers_found": []
+          },
+          "operations": [
+            {
+              "op": "glossary_normalization",
+              "detail": "'hubspot' → 'HubSpot'",
+              "before": "slack oui hubspot en beta mais je veux pas dire de betise",
+              "after": "slack oui HubSpot en beta mais je veux pas dire de betise",
+              "confidence": 0.9,
+              "source": "glossary"
+            },
+            {
+              "op": "glossary_normalization",
+              "detail": "'slack' → 'Slack'",
+              "before": "slack oui HubSpot en beta mais je veux pas dire de betise",
+              "after": "Slack oui HubSpot en beta mais je veux pas dire de betise",
+              "confidence": 0.9,
+              "source": "glossary"
+            },
+            {
+              "op": "punctuation",
+              "detail": "Capitalization + ending punctuation",
+              "before": "Slack oui HubSpot en beta mais je veux pas dire de betise",
+              "after": "Slack oui HubSpot en beta mais je veux pas dire de betise.",
+              "confidence": 0.8,
+              "source": "rule"
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "start_time": 74.2,
+          "end_time": 78.3,
+          "speaker": "speaker_1",
+          "original": "ok parfait envoyez moi un recap",
+          "edited": "Ok parfait envoyez moi un recap.",
+          "changed": true,
+          "diagnostics": {
+            "issues": [
+              "missing_punctuation"
+            ],
+            "aliases_detected": [],
+            "numbers_found": []
+          },
+          "operations": [
+            {
+              "op": "punctuation",
+              "detail": "Capitalization + ending punctuation",
+              "before": "ok parfait envoyez moi un recap",
+              "after": "Ok parfait envoyez moi un recap.",
+              "confidence": 0.8,
+              "source": "rule"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

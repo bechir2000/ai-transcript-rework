@@ -1,0 +1,13 @@
+{
+  "transcript_id": "recruiting_tech_003",
+  "metadata": { "duration": 83.7, "date": "2025-11-28T10:00:00Z", "source": "assemblyai" },
+  "messages": [
+    { "speaker": "speaker_0", "content": "bonjour bechir merci d etre la aujourd hui tu peux te presenter rapidement", "start_time": 0.0, "end_time": 6.8 },
+    { "speaker": "speaker_1", "content": "oui bonjour merci donc je suis ingenieur logiciel et je travaille sur un outil qui genere du code react depuis une lib interne avec un mcp server", "start_time": 7.0, "end_time": 18.4 },
+    { "speaker": "speaker_1", "content": "on utilise aussi open search pour la recherche semantique et et et des lms pour evaluer", "start_time": 18.5, "end_time": 26.0 },
+    { "speaker": "speaker_0", "content": "quand tu dis lms tu veux dire l l m", "start_time": 26.1, "end_time": 29.2 },
+    { "speaker": "speaker_1", "content": "oui pardon l l m", "start_time": 29.3, "end_time": 31.0 },
+    { "speaker": "speaker_0", "content": "ok et tu fais comment pour eviter que le modele invente du contenu", "start_time": 31.1, "end_time": 37.6 },
+    { "speaker": "speaker_1", "content": "on met des controles de sortie et on garde une trace des transformations", "start_time": 37.7, "end_time": 43.6 }
+  ]
+}

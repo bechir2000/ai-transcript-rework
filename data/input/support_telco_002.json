@@ -1,0 +1,14 @@
+{
+  "transcript_id": "support_telco_002",
+  "metadata": { "duration": 105.0, "date": "2025-12-05T16:40:00Z", "source": "deepgram" },
+  "messages": [
+    { "speaker": "speaker_0", "content": "bonjour support ovhcloud je vous ecoute", "start_time": 0.0, "end_time": 4.1 },
+    { "speaker": "speaker_1", "content": "oui bonjour je veux faire un renvoi d appel de mon zero sept vers mon numero tunisien mais jai peur des frais de rooming", "start_time": 4.3, "end_time": 13.2 },
+    { "speaker": "speaker_0", "content": "d accord vous parlez d un transfert depuis la sim ou depuis la ligne ovh en 09", "start_time": 13.4, "end_time": 20.0 },
+    { "speaker": "speaker_1", "content": "depuis la sim je crois avec etoile vingt et un et apres le numero", "start_time": 20.1, "end_time": 26.0 },
+    { "speaker": "speaker_0", "content": "ok attention ca peut facturer en fonction de votre operateur mobile on peut plutot faire le renvoi cote ovh c est moins cher souvent", "start_time": 26.2, "end_time": 37.4 },
+    { "speaker": "speaker_1", "content": "oui et je veux que les gens voient mon numero pas anonyme parce que jai eu des appels affiches anonymes", "start_time": 37.6, "end_time": 46.0 },
+    { "speaker": "speaker_0", "content": "on peut verifier l id appelant et aussi le cli sur le trunk mais sans votre config exacte je prefere pas affirmer", "start_time": 46.2, "end_time": 56.8 },
+    { "speaker": "speaker_1", "content": "ok vous pouvez menvoyer la doc", "start_time": 57.0, "end_time": 60.2 }
+  ]
+}
