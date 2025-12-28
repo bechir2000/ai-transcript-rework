@@ -45,7 +45,7 @@ class ContextExtraction(BaseModel):
     constraints: List[str] = Field(default_factory=lambda: ["no_invention", "no_paraphrase", "preserve_timestamps"])
 
 
-# --------- 2) Validation anti-hallucination côté pipeline ---------
+# --------- 2) Validation anti-hallucination ---------
 
 def _full_text(transcript_obj: Dict[str, Any]) -> str:
     return "\n".join(str(m.get("content", "")) for m in transcript_obj.get("messages", []))

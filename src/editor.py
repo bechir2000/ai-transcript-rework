@@ -14,7 +14,7 @@ class Operation:
     before: str
     after: str
     confidence: float
-    source: str  # rule|glossary
+    source: str
 
 
 def _norm(s: str) -> str:
