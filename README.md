@@ -137,15 +137,15 @@ Toutes les transformations sont enregistrées dans :
 
 ## Périmètre du prototype vs exigences
 
-### Démontré complètement
+### Ce qui a été fait
 - ✅ Pipeline de nettoyage
-- ✅ Extraction de contexte via LLM (contrôlée)
+- ✅ Extraction de contexte via LLM
 - ✅ Détection d’omissions (écarts temporels)
 - ✅ Traitements contextuels
 - ✅ Traçabilité des transformations opérées 
 
-### Démontré partiellement
-- ⚠️ Amélioration de diarisation  
+### Pas encore fait
+- ❌ Amélioration de diarisation  
 
 ---
 
