@@ -32,7 +32,7 @@
     },
     {
       "speaker": "speaker_0",
-      "content": "Ok attention ca peut facturer en fonction de votre operateur mobile on peut plutot faire le renvoi cote OVH c est moins cher souvent.",
+      "content": "Ok attention ça peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi côté OVH c est moins cher souvent.",
       "start_time": 26.2,
       "end_time": 37.4
     },
@@ -82,80 +82,97 @@
     "glossary": [
       {
         "term": "OVHcloud",
-        "aliases": [
-          "ovhcloud"
-        ],
+        "aliases": [],
         "confidence": 0.95
       },
       {
         "term": "OVH",
-        "aliases": [
-          "ovh"
-        ],
-        "confidence": 0.8
+        "aliases": [],
+        "confidence": 0.9
       },
       {
         "term": "SIM",
-        "aliases": [
-          "sim"
-        ],
-        "confidence": 0.8
-      },
-      {
-        "term": "09",
-        "aliases": [
-          "09"
-        ],
-        "confidence": 0.75
+        "aliases": [],
+        "confidence": 0.85
       },
       {
         "term": "ID appelant",
-        "aliases": [
-          "id appelant"
-        ],
-        "confidence": 0.75
+        "aliases": [],
+        "confidence": 0.8
       },
       {
         "term": "CLI",
-        "aliases": [
-          "cli"
-        ],
-        "confidence": 0.75
+        "aliases": [],
+        "confidence": 0.8
       },
       {
         "term": "trunk",
-        "aliases": [
-          "trunk"
-        ],
+        "aliases": [],
         "confidence": 0.75
       }
     ],
     "language_errors": [
       {
+        "error_type": "agreement",
+        "incorrect_text": "renvoi d appel",
+        "correct_form": "renvoi d'appels",
+        "explanation": "« Appel » est ici au sens général (des appels) ; on écrit généralement « renvoi d'appels ».",
+        "confidence": 0.7
+      },
+      {
         "error_type": "spelling",
         "incorrect_text": "rooming",
         "correct_form": "roaming",
-        "explanation": "Anglicisme mal orthographié dans le contexte télécom (itinérance).",
-        "confidence": 0.9
+        "explanation": "Le terme télécom correct est « roaming ».",
+        "confidence": 0.95
       },
       {
         "error_type": "spelling",
         "incorrect_text": "jai",
         "correct_form": "j'ai",
-        "explanation": "Apostrophe manquante dans la contraction de \"je ai\".",
-        "confidence": 0.8
+        "explanation": "Apostrophe manquante dans « j'ai ».",
+        "confidence": 0.95
+      },
+      {
+        "error_type": "spelling",
+        "incorrect_text": "cote",
+        "correct_form": "côté",
+        "explanation": "Accent manquant sur « côté ».",
+        "confidence": 0.9
+      },
+      {
+        "error_type": "spelling",
+        "incorrect_text": "ca",
+        "correct_form": "ça",
+        "explanation": "Cédille manquante sur « ça ».",
+        "confidence": 0.9
+      },
+      {
+        "error_type": "spelling",
+        "incorrect_text": "plutot",
+        "correct_form": "plutôt",
+        "explanation": "Accent circonflexe manquant sur « plutôt ».",
+        "confidence": 0.9
+      },
+      {
+        "error_type": "spelling",
+        "incorrect_text": "operateur",
+        "correct_form": "opérateur",
+        "explanation": "Accent manquant sur « opérateur ».",
+        "confidence": 0.9
       },
       {
         "error_type": "spelling",
         "incorrect_text": "menvoyer",
         "correct_form": "m'envoyer",
-        "explanation": "Apostrophe manquante dans \"me envoyer\".",
-        "confidence": 0.8
+        "explanation": "Apostrophe manquante dans « m'envoyer ».",
+        "confidence": 0.95
       }
     ],
     "constraints": [
       "NE PAS inventer de faits.",
       "NE PAS paraphraser ou réécrire la transcription.",
+      "La sortie DOIT respecter le schéma JSON fourni.",
       "Chaque hypothèse DOIT inclure 1 à 3 evidence_quotes qui sont des sous-chaînes EXACTES de la transcription.",
       "En cas d'incertitude: définir une confiance faible et laisser evidence_quotes vide.",
       "Pour les erreurs de langue: signaler UNIQUEMENT les erreurs claires, PAS les expressions familières ou les structures de langage parlé naturel."
@@ -197,20 +214,14 @@
         "term": "OVH",
         "evidence": [
           "on peut plutot faire le renvoi cote ovh c est moins cher souvent",
-          "depuis la ligne ovh en 09"
+          "d accord vous parlez d un transfert depuis la sim ou depuis la ligne ovh en 09"
         ]
       },
       {
         "term": "SIM",
         "evidence": [
-          "d accord vous parlez d un transfert depuis la sim ou depuis la ligne ovh en 09",
-          "depuis la sim je crois avec etoile vingt et un et apres le numero"
-        ]
-      },
-      {
-        "term": "09",
-        "evidence": [
-          "depuis la ligne ovh en 09"
+          "depuis la sim je crois avec etoile vingt et un et apres le numero",
+          "d accord vous parlez d un transfert depuis la sim ou depuis la ligne ovh en 09"
         ]
       },
       {
@@ -234,27 +245,67 @@
     ],
     "language_errors_detected": [
       {
+        "error_type": "agreement",
+        "incorrect": "renvoi d appel",
+        "correct": "renvoi d'appels",
+        "explanation": "« Appel » est ici au sens général (des appels) ; on écrit généralement « renvoi d'appels ».",
+        "confidence": 0.7,
+        "evidence": "oui bonjour je veux faire un renvoi d appel de mon zero sept vers mon numero tunisien mais jai peur des frais de rooming"
+      },
+      {
         "error_type": "spelling",
         "incorrect": "rooming",
         "correct": "roaming",
-        "explanation": "Anglicisme mal orthographié dans le contexte télécom (itinérance).",
-        "confidence": 0.9,
+        "explanation": "Le terme télécom correct est « roaming ».",
+        "confidence": 0.95,
         "evidence": "oui bonjour je veux faire un renvoi d appel de mon zero sept vers mon numero tunisien mais jai peur des frais de rooming"
       },
       {
         "error_type": "spelling",
         "incorrect": "jai",
         "correct": "j'ai",
-        "explanation": "Apostrophe manquante dans la contraction de \"je ai\".",
-        "confidence": 0.8,
+        "explanation": "Apostrophe manquante dans « j'ai ».",
+        "confidence": 0.95,
         "evidence": "oui bonjour je veux faire un renvoi d appel de mon zero sept vers mon numero tunisien mais jai peur des frais de rooming"
+      },
+      {
+        "error_type": "spelling",
+        "incorrect": "cote",
+        "correct": "côté",
+        "explanation": "Accent manquant sur « côté ».",
+        "confidence": 0.9,
+        "evidence": "ok attention ca peut facturer en fonction de votre operateur mobile on peut plutot faire le renvoi cote ovh c est moins cher souvent"
+      },
+      {
+        "error_type": "spelling",
+        "incorrect": "ca",
+        "correct": "ça",
+        "explanation": "Cédille manquante sur « ça ».",
+        "confidence": 0.9,
+        "evidence": "ok attention ca peut facturer en fonction de votre operateur mobile on peut plutot faire le renvoi cote ovh c est moins cher souvent"
+      },
+      {
+        "error_type": "spelling",
+        "incorrect": "plutot",
+        "correct": "plutôt",
+        "explanation": "Accent circonflexe manquant sur « plutôt ».",
+        "confidence": 0.9,
+        "evidence": "ok attention ca peut facturer en fonction de votre operateur mobile on peut plutot faire le renvoi cote ovh c est moins cher souvent"
+      },
+      {
+        "error_type": "spelling",
+        "incorrect": "operateur",
+        "correct": "opérateur",
+        "explanation": "Accent manquant sur « opérateur ».",
+        "confidence": 0.9,
+        "evidence": "ok attention ca peut facturer en fonction de votre operateur mobile on peut plutot faire le renvoi cote ovh c est moins cher souvent"
       },
       {
         "error_type": "spelling",
         "incorrect": "menvoyer",
         "correct": "m'envoyer",
-        "explanation": "Apostrophe manquante dans \"me envoyer\".",
-        "confidence": 0.8,
+        "explanation": "Apostrophe manquante dans « m'envoyer ».",
+        "confidence": 0.95,
         "evidence": "ok vous pouvez menvoyer la doc"
       }
     ],
@@ -438,7 +489,7 @@
           "end_time": 37.4,
           "speaker": "speaker_0",
           "original": "ok attention ca peut facturer en fonction de votre operateur mobile on peut plutot faire le renvoi cote ovh c est moins cher souvent",
-          "edited": "Ok attention ca peut facturer en fonction de votre operateur mobile on peut plutot faire le renvoi cote OVH c est moins cher souvent.",
+          "edited": "Ok attention ça peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi côté OVH c est moins cher souvent.",
           "changed": true,
           "diagnostics": {
             "issues": [
@@ -457,10 +508,42 @@
               "source": "glossary"
             },
             {
+              "op": "language_error_fix",
+              "detail": "'operateur' → 'opérateur'",
+              "before": "ok attention ca peut facturer en fonction de votre operateur mobile on peut plutot faire le renvoi cote OVH c est moins cher souvent",
+              "after": "ok attention ca peut facturer en fonction de votre opérateur mobile on peut plutot faire le renvoi cote OVH c est moins cher souvent",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
+              "op": "language_error_fix",
+              "detail": "'plutot' → 'plutôt'",
+              "before": "ok attention ca peut facturer en fonction de votre opérateur mobile on peut plutot faire le renvoi cote OVH c est moins cher souvent",
+              "after": "ok attention ca peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi cote OVH c est moins cher souvent",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
+              "op": "language_error_fix",
+              "detail": "'cote' → 'côté'",
+              "before": "ok attention ca peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi cote OVH c est moins cher souvent",
+              "after": "ok attention ca peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi côté OVH c est moins cher souvent",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
+              "op": "language_error_fix",
+              "detail": "'ca' → 'ça'",
+              "before": "ok attention ca peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi côté OVH c est moins cher souvent",
+              "after": "ok attention ça peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi côté OVH c est moins cher souvent",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
               "op": "punctuation",
               "detail": "Capitalization + ending punctuation",
-              "before": "ok attention ca peut facturer en fonction de votre operateur mobile on peut plutot faire le renvoi cote OVH c est moins cher souvent",
-              "after": "Ok attention ca peut facturer en fonction de votre operateur mobile on peut plutot faire le renvoi cote OVH c est moins cher souvent.",
+              "before": "ok attention ça peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi côté OVH c est moins cher souvent",
+              "after": "Ok attention ça peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi côté OVH c est moins cher souvent.",
               "confidence": 0.8,
               "source": "rule"
             }

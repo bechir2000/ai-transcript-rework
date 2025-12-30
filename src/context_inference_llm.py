@@ -113,22 +113,14 @@ Transcription (verbatim):
 
 Tâches:
 1) Deviner le domaine parmi: sales, support, recruiting, healthcare, etc...
-2) Deviner les rôles des intervenants (agent/client ou interviewer/candidate etc...) si possible.
+2) Deviner les rôles des intervenants (agent/client ou interviewer/candidate, etc...) si possible.
 3) Extraire les candidats du glossaire: noms propres, acronymes, noms de produits/outils; inclure aliases_found uniquement s'ils sont vus.
-4) Détecter les erreurs de français (orthographe, grammaire, conjugaison, accord):
-   
-   Exemples à détecter:
-   - "etre" → devrait être "être" (accent manquant)
-   - "démarer" → devrait être "démarrer" (orthographe: double 'r' manquant)
-   - "un soucis" → devrait être "un souci" (accord: article masculin singulier)
-   - "il a travailler" → devrait être "il a travaillé" (conjugaison: participe passé requis après l'auxiliaire 'avoir')
-   - "les transcript" → devrait être "les transcripts" (accord: pluriel)
-   
-   NE PAS signaler:
-   - Les expressions familières (genre "c'est cool", "ça le fait")
-   - Les phrases incomplètes (naturelles à l'oral)
-   - Les expressions informelles ou régionalismes
-   - Les hésitations normales du langage parlé
+4) Détecter les erreurs de français (orthographe, grammaire, conjugaison, accord, absence d'accent et d'apostrophe, etc...):
+NE PAS signaler:
+- Les expressions familières (genre "c'est cool", "ça le fait")
+- Les phrases incomplètes (naturelles à l'oral)
+- Les expressions informelles ou régionalismes
+- Les hésitations normales du langage parlé
 
 Important:
 - evidence_quotes doit être des sous-chaînes EXACTES de la transcription

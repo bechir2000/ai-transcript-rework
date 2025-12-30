@@ -1,0 +1,1 @@
+py src/pipeline.py --infile data/input/support_telco_002.json --outfile data/output/support_telco_002.qa.json
