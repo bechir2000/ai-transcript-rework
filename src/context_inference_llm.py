@@ -115,7 +115,8 @@ Tâches:
 1) Deviner le domaine parmi: sales, support, recruiting, healthcare, etc...
 2) Deviner les rôles des intervenants (agent/client ou interviewer/candidate, etc...) si possible.
 3) Extraire les candidats du glossaire: noms propres, acronymes, noms de produits/outils; inclure aliases_found uniquement s'ils sont vus.
-4) Détecter les erreurs de français (orthographe, grammaire, conjugaison, accord, absence d'accent et d'apostrophe, etc...):
+4) Détecter les erreurs de français (orthographe, grammaire, conjugaison, accord, absence d'accent et d'apostrophe, etc...).
+5) Ne pas oublier aussi de corriger les absences d'accent sur les mots.
 NE PAS signaler:
 - Les expressions familières (genre "c'est cool", "ça le fait")
 - Les phrases incomplètes (naturelles à l'oral)

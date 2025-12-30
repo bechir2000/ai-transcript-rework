@@ -8,49 +8,49 @@
   "messages": [
     {
       "speaker": "speaker_0",
-      "content": "Bonjour support OVHcloud je vous ecoute.",
+      "content": "Bonjour support OVHcloud je vous écoute.",
       "start_time": 0.0,
       "end_time": 4.1
     },
     {
       "speaker": "speaker_1",
-      "content": "Oui bonjour je veux faire un renvoi d appel de mon zero sept vers mon numero tunisien mais j'ai peur des frais de roaming.",
+      "content": "Oui bonjour je veux faire un renvoi d’appel de mon zero sept vers mon numéro tunisien mais j’ai peur des frais de roaming.",
       "start_time": 4.3,
       "end_time": 13.2
     },
     {
       "speaker": "speaker_0",
-      "content": "D accord vous parlez d un transfert depuis la SIM ou depuis la ligne OVH en 09.",
+      "content": "D’accord vous parlez d’un transfert depuis la SIM ou depuis la ligne OVH en 09.",
       "start_time": 13.4,
       "end_time": 20.0
     },
     {
       "speaker": "speaker_1",
-      "content": "Depuis la SIM je crois avec etoile vingt et un et apres le numero.",
+      "content": "Depuis la SIM je crois avec etoile vingt et un et apres le numéro.",
       "start_time": 20.1,
       "end_time": 26.0
     },
     {
       "speaker": "speaker_0",
-      "content": "Ok attention ça peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi côté OVH c est moins cher souvent.",
+      "content": "Ok attention ça peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi côté OVH c’est moins cher souvent.",
       "start_time": 26.2,
       "end_time": 37.4
     },
     {
       "speaker": "speaker_1",
-      "content": "Oui et je veux que les gens voient mon numero pas anonyme parce que j'ai eu des appels affiches anonymes.",
+      "content": "Oui et je veux que les gens voient mon numéro pas anonyme parce que j’ai eu des appels affichés anonymes.",
       "start_time": 37.6,
       "end_time": 46.0
     },
     {
       "speaker": "speaker_0",
-      "content": "On peut verifier l ID appelant et aussi le CLI sur le trunk mais sans votre config exacte je prefere pas affirmer.",
+      "content": "On peut vérifier l ID appelant et aussi le CLI sur le trunk mais sans votre config exacte je préfère pas affirmer.",
       "start_time": 46.2,
       "end_time": 56.8
     },
     {
       "speaker": "speaker_1",
-      "content": "Ok vous pouvez m'envoyer la doc.",
+      "content": "Ok vous pouvez m’envoyer la doc.",
       "start_time": 57.0,
       "end_time": 60.2
     }
@@ -82,18 +82,31 @@
     "glossary": [
       {
         "term": "OVHcloud",
-        "aliases": [],
+        "aliases": [
+          "ovhcloud"
+        ],
         "confidence": 0.95
       },
       {
         "term": "OVH",
-        "aliases": [],
-        "confidence": 0.9
+        "aliases": [
+          "ovh"
+        ],
+        "confidence": 0.8
       },
       {
         "term": "SIM",
-        "aliases": [],
+        "aliases": [
+          "sim"
+        ],
         "confidence": 0.85
+      },
+      {
+        "term": "09",
+        "aliases": [
+          "09"
+        ],
+        "confidence": 0.75
       },
       {
         "term": "ID appelant",
@@ -102,42 +115,88 @@
       },
       {
         "term": "CLI",
-        "aliases": [],
+        "aliases": [
+          "cli"
+        ],
         "confidence": 0.8
       },
       {
         "term": "trunk",
-        "aliases": [],
-        "confidence": 0.75
+        "aliases": [
+          "trunk"
+        ],
+        "confidence": 0.8
       }
     ],
     "language_errors": [
       {
-        "error_type": "agreement",
+        "error_type": "spelling",
+        "incorrect_text": "je vous ecoute",
+        "correct_form": "je vous écoute",
+        "explanation": "Accent manquant sur « écoute ».",
+        "confidence": 0.85
+      },
+      {
+        "error_type": "spelling",
         "incorrect_text": "renvoi d appel",
-        "correct_form": "renvoi d'appels",
-        "explanation": "« Appel » est ici au sens général (des appels) ; on écrit généralement « renvoi d'appels ».",
-        "confidence": 0.7
+        "correct_form": "renvoi d’appel",
+        "explanation": "Apostrophe manquante (élision) dans « d’appel ».",
+        "confidence": 0.8
+      },
+      {
+        "error_type": "spelling",
+        "incorrect_text": "numero",
+        "correct_form": "numéro",
+        "explanation": "Accent manquant sur « numéro ».",
+        "confidence": 0.85
+      },
+      {
+        "error_type": "spelling",
+        "incorrect_text": "jai",
+        "correct_form": "j’ai",
+        "explanation": "Apostrophe manquante dans « j’ai ».",
+        "confidence": 0.9
       },
       {
         "error_type": "spelling",
         "incorrect_text": "rooming",
         "correct_form": "roaming",
-        "explanation": "Le terme télécom correct est « roaming ».",
-        "confidence": 0.95
+        "explanation": "Orthographe incorrecte du terme « roaming ».",
+        "confidence": 0.9
       },
       {
         "error_type": "spelling",
-        "incorrect_text": "jai",
-        "correct_form": "j'ai",
-        "explanation": "Apostrophe manquante dans « j'ai ».",
-        "confidence": 0.95
+        "incorrect_text": "d accord",
+        "correct_form": "d’accord",
+        "explanation": "Apostrophe manquante dans « d’accord ».",
+        "confidence": 0.9
+      },
+      {
+        "error_type": "spelling",
+        "incorrect_text": "d un",
+        "correct_form": "d’un",
+        "explanation": "Apostrophe manquante dans « d’un ».",
+        "confidence": 0.9
       },
       {
         "error_type": "spelling",
         "incorrect_text": "cote",
         "correct_form": "côté",
         "explanation": "Accent manquant sur « côté ».",
+        "confidence": 0.85
+      },
+      {
+        "error_type": "spelling",
+        "incorrect_text": "plutot",
+        "correct_form": "plutôt",
+        "explanation": "Accent circonflexe manquant sur « plutôt ».",
+        "confidence": 0.85
+      },
+      {
+        "error_type": "spelling",
+        "incorrect_text": "c est",
+        "correct_form": "c’est",
+        "explanation": "Apostrophe manquante dans « c’est ».",
         "confidence": 0.9
       },
       {
@@ -145,28 +204,42 @@
         "incorrect_text": "ca",
         "correct_form": "ça",
         "explanation": "Cédille manquante sur « ça ».",
-        "confidence": 0.9
-      },
-      {
-        "error_type": "spelling",
-        "incorrect_text": "plutot",
-        "correct_form": "plutôt",
-        "explanation": "Accent circonflexe manquant sur « plutôt ».",
-        "confidence": 0.9
+        "confidence": 0.85
       },
       {
         "error_type": "spelling",
         "incorrect_text": "operateur",
         "correct_form": "opérateur",
         "explanation": "Accent manquant sur « opérateur ».",
-        "confidence": 0.9
+        "confidence": 0.85
+      },
+      {
+        "error_type": "spelling",
+        "incorrect_text": "appels affiches anonymes",
+        "correct_form": "appels affichés anonymes",
+        "explanation": "Accent manquant sur « affichés ».",
+        "confidence": 0.8
+      },
+      {
+        "error_type": "spelling",
+        "incorrect_text": "verifier",
+        "correct_form": "vérifier",
+        "explanation": "Accent manquant sur « vérifier ».",
+        "confidence": 0.8
+      },
+      {
+        "error_type": "spelling",
+        "incorrect_text": "prefere",
+        "correct_form": "préfère",
+        "explanation": "Accent manquant sur « préfère ».",
+        "confidence": 0.8
       },
       {
         "error_type": "spelling",
         "incorrect_text": "menvoyer",
-        "correct_form": "m'envoyer",
-        "explanation": "Apostrophe manquante dans « m'envoyer ».",
-        "confidence": 0.95
+        "correct_form": "m’envoyer",
+        "explanation": "Apostrophe manquante dans « m’envoyer ».",
+        "confidence": 0.85
       }
     ],
     "constraints": [
@@ -175,7 +248,12 @@
       "La sortie DOIT respecter le schéma JSON fourni.",
       "Chaque hypothèse DOIT inclure 1 à 3 evidence_quotes qui sont des sous-chaînes EXACTES de la transcription.",
       "En cas d'incertitude: définir une confiance faible et laisser evidence_quotes vide.",
-      "Pour les erreurs de langue: signaler UNIQUEMENT les erreurs claires, PAS les expressions familières ou les structures de langage parlé naturel."
+      "Pour les erreurs de langue: signaler UNIQUEMENT les erreurs claires, PAS les expressions familières ou les structures de langage parlé naturel.",
+      "Signaler uniquement les erreurs dont vous êtes sûr (confidence >= 0.7)",
+      "evidence_quotes doit être des sous-chaînes EXACTES de la transcription",
+      "Pour language_errors: evidence_quote doit contenir la phrase complète avec l'erreur",
+      "incorrect_text doit être le mot/phrase exact qui est incorrect",
+      "Ne pas signaler les expressions familières, phrases incomplètes, expressions informelles/régionalismes, hésitations normales du langage parlé"
     ]
   },
   "context_report": {
@@ -198,7 +276,7 @@
         "role": "client",
         "confidence": 0.9,
         "evidence": [
-          "oui bonjour je veux faire un renvoi d appel de mon zero sept vers mon numero tunisien mais jai peur des frais de rooming",
+          "oui bonjour je veux faire un renvoi d appel de mon zero sept vers mon numero tunisien",
           "ok vous pouvez menvoyer la doc"
         ]
       }
@@ -213,8 +291,8 @@
       {
         "term": "OVH",
         "evidence": [
-          "on peut plutot faire le renvoi cote ovh c est moins cher souvent",
-          "d accord vous parlez d un transfert depuis la sim ou depuis la ligne ovh en 09"
+          "depuis la ligne ovh en 09",
+          "on peut plutot faire le renvoi cote ovh c est moins cher souvent"
         ]
       },
       {
@@ -225,54 +303,108 @@
         ]
       },
       {
+        "term": "09",
+        "evidence": [
+          "depuis la ligne ovh en 09"
+        ]
+      },
+      {
         "term": "ID appelant",
         "evidence": [
-          "on peut verifier l id appelant et aussi le cli sur le trunk mais sans votre config exacte je prefere pas affirmer"
+          "on peut verifier l id appelant et aussi le cli sur le trunk"
         ]
       },
       {
         "term": "CLI",
         "evidence": [
-          "on peut verifier l id appelant et aussi le cli sur le trunk mais sans votre config exacte je prefere pas affirmer"
+          "on peut verifier l id appelant et aussi le cli sur le trunk"
         ]
       },
       {
         "term": "trunk",
         "evidence": [
-          "on peut verifier l id appelant et aussi le cli sur le trunk mais sans votre config exacte je prefere pas affirmer"
+          "on peut verifier l id appelant et aussi le cli sur le trunk"
         ]
       }
     ],
     "language_errors_detected": [
       {
-        "error_type": "agreement",
+        "error_type": "spelling",
+        "incorrect": "je vous ecoute",
+        "correct": "je vous écoute",
+        "explanation": "Accent manquant sur « écoute ».",
+        "confidence": 0.85,
+        "evidence": "bonjour support ovhcloud je vous ecoute"
+      },
+      {
+        "error_type": "spelling",
         "incorrect": "renvoi d appel",
-        "correct": "renvoi d'appels",
-        "explanation": "« Appel » est ici au sens général (des appels) ; on écrit généralement « renvoi d'appels ».",
-        "confidence": 0.7,
+        "correct": "renvoi d’appel",
+        "explanation": "Apostrophe manquante (élision) dans « d’appel ».",
+        "confidence": 0.8,
+        "evidence": "oui bonjour je veux faire un renvoi d appel de mon zero sept vers mon numero tunisien mais jai peur des frais de rooming"
+      },
+      {
+        "error_type": "spelling",
+        "incorrect": "numero",
+        "correct": "numéro",
+        "explanation": "Accent manquant sur « numéro ».",
+        "confidence": 0.85,
+        "evidence": "oui bonjour je veux faire un renvoi d appel de mon zero sept vers mon numero tunisien mais jai peur des frais de rooming"
+      },
+      {
+        "error_type": "spelling",
+        "incorrect": "jai",
+        "correct": "j’ai",
+        "explanation": "Apostrophe manquante dans « j’ai ».",
+        "confidence": 0.9,
         "evidence": "oui bonjour je veux faire un renvoi d appel de mon zero sept vers mon numero tunisien mais jai peur des frais de rooming"
       },
       {
         "error_type": "spelling",
         "incorrect": "rooming",
         "correct": "roaming",
-        "explanation": "Le terme télécom correct est « roaming ».",
-        "confidence": 0.95,
+        "explanation": "Orthographe incorrecte du terme « roaming ».",
+        "confidence": 0.9,
         "evidence": "oui bonjour je veux faire un renvoi d appel de mon zero sept vers mon numero tunisien mais jai peur des frais de rooming"
       },
       {
         "error_type": "spelling",
-        "incorrect": "jai",
-        "correct": "j'ai",
-        "explanation": "Apostrophe manquante dans « j'ai ».",
-        "confidence": 0.95,
-        "evidence": "oui bonjour je veux faire un renvoi d appel de mon zero sept vers mon numero tunisien mais jai peur des frais de rooming"
+        "incorrect": "d accord",
+        "correct": "d’accord",
+        "explanation": "Apostrophe manquante dans « d’accord ».",
+        "confidence": 0.9,
+        "evidence": "d accord vous parlez d un transfert depuis la sim ou depuis la ligne ovh en 09"
+      },
+      {
+        "error_type": "spelling",
+        "incorrect": "d un",
+        "correct": "d’un",
+        "explanation": "Apostrophe manquante dans « d’un ».",
+        "confidence": 0.9,
+        "evidence": "d accord vous parlez d un transfert depuis la sim ou depuis la ligne ovh en 09"
       },
       {
         "error_type": "spelling",
         "incorrect": "cote",
         "correct": "côté",
         "explanation": "Accent manquant sur « côté ».",
+        "confidence": 0.85,
+        "evidence": "ok attention ca peut facturer en fonction de votre operateur mobile on peut plutot faire le renvoi cote ovh c est moins cher souvent"
+      },
+      {
+        "error_type": "spelling",
+        "incorrect": "plutot",
+        "correct": "plutôt",
+        "explanation": "Accent circonflexe manquant sur « plutôt ».",
+        "confidence": 0.85,
+        "evidence": "ok attention ca peut facturer en fonction de votre operateur mobile on peut plutot faire le renvoi cote ovh c est moins cher souvent"
+      },
+      {
+        "error_type": "spelling",
+        "incorrect": "c est",
+        "correct": "c’est",
+        "explanation": "Apostrophe manquante dans « c’est ».",
         "confidence": 0.9,
         "evidence": "ok attention ca peut facturer en fonction de votre operateur mobile on peut plutot faire le renvoi cote ovh c est moins cher souvent"
       },
@@ -281,15 +413,7 @@
         "incorrect": "ca",
         "correct": "ça",
         "explanation": "Cédille manquante sur « ça ».",
-        "confidence": 0.9,
-        "evidence": "ok attention ca peut facturer en fonction de votre operateur mobile on peut plutot faire le renvoi cote ovh c est moins cher souvent"
-      },
-      {
-        "error_type": "spelling",
-        "incorrect": "plutot",
-        "correct": "plutôt",
-        "explanation": "Accent circonflexe manquant sur « plutôt ».",
-        "confidence": 0.9,
+        "confidence": 0.85,
         "evidence": "ok attention ca peut facturer en fonction de votre operateur mobile on peut plutot faire le renvoi cote ovh c est moins cher souvent"
       },
       {
@@ -297,15 +421,39 @@
         "incorrect": "operateur",
         "correct": "opérateur",
         "explanation": "Accent manquant sur « opérateur ».",
-        "confidence": 0.9,
+        "confidence": 0.85,
         "evidence": "ok attention ca peut facturer en fonction de votre operateur mobile on peut plutot faire le renvoi cote ovh c est moins cher souvent"
       },
       {
         "error_type": "spelling",
+        "incorrect": "appels affiches anonymes",
+        "correct": "appels affichés anonymes",
+        "explanation": "Accent manquant sur « affichés ».",
+        "confidence": 0.8,
+        "evidence": "oui et je veux que les gens voient mon numero pas anonyme parce que jai eu des appels affiches anonymes"
+      },
+      {
+        "error_type": "spelling",
+        "incorrect": "verifier",
+        "correct": "vérifier",
+        "explanation": "Accent manquant sur « vérifier ».",
+        "confidence": 0.8,
+        "evidence": "on peut verifier l id appelant et aussi le cli sur le trunk mais sans votre config exacte je prefere pas affirmer"
+      },
+      {
+        "error_type": "spelling",
+        "incorrect": "prefere",
+        "correct": "préfère",
+        "explanation": "Accent manquant sur « préfère ».",
+        "confidence": 0.8,
+        "evidence": "on peut verifier l id appelant et aussi le cli sur le trunk mais sans votre config exacte je prefere pas affirmer"
+      },
+      {
+        "error_type": "spelling",
         "incorrect": "menvoyer",
-        "correct": "m'envoyer",
-        "explanation": "Apostrophe manquante dans « m'envoyer ».",
-        "confidence": 0.95,
+        "correct": "m’envoyer",
+        "explanation": "Apostrophe manquante dans « m’envoyer ».",
+        "confidence": 0.85,
         "evidence": "ok vous pouvez menvoyer la doc"
       }
     ],
@@ -334,16 +482,7 @@
           "start_time": 0.0,
           "end_time": 4.1,
           "speaker": "speaker_0",
-          "original": "bonjour support ovhcloud je vous ecoute",
-          "edited": "Bonjour support OVHcloud je vous ecoute.",
           "changed": true,
-          "diagnostics": {
-            "issues": [
-              "missing_punctuation"
-            ],
-            "aliases_detected": [],
-            "numbers_found": []
-          },
           "operations": [
             {
               "op": "glossary_normalization",
@@ -354,10 +493,18 @@
               "source": "glossary"
             },
             {
+              "op": "language_error_fix",
+              "detail": "'je vous ecoute' → 'je vous écoute'",
+              "before": "bonjour support OVHcloud je vous ecoute",
+              "after": "bonjour support OVHcloud je vous écoute",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
               "op": "punctuation",
               "detail": "Capitalization + ending punctuation",
-              "before": "bonjour support OVHcloud je vous ecoute",
-              "after": "Bonjour support OVHcloud je vous ecoute.",
+              "before": "bonjour support OVHcloud je vous écoute",
+              "after": "Bonjour support OVHcloud je vous écoute.",
               "confidence": 0.8,
               "source": "rule"
             }
@@ -368,38 +515,45 @@
           "start_time": 4.3,
           "end_time": 13.2,
           "speaker": "speaker_1",
-          "original": "oui bonjour je veux faire un renvoi d appel de mon zero sept vers mon numero tunisien mais jai peur des frais de rooming",
-          "edited": "Oui bonjour je veux faire un renvoi d appel de mon zero sept vers mon numero tunisien mais j'ai peur des frais de roaming.",
           "changed": true,
-          "diagnostics": {
-            "issues": [
-              "missing_punctuation"
-            ],
-            "aliases_detected": [],
-            "numbers_found": []
-          },
           "operations": [
             {
               "op": "language_error_fix",
-              "detail": "'rooming' → 'roaming'",
+              "detail": "'renvoi d appel' → 'renvoi d’appel'",
               "before": "oui bonjour je veux faire un renvoi d appel de mon zero sept vers mon numero tunisien mais jai peur des frais de rooming",
-              "after": "oui bonjour je veux faire un renvoi d appel de mon zero sept vers mon numero tunisien mais jai peur des frais de roaming",
+              "after": "oui bonjour je veux faire un renvoi d’appel de mon zero sept vers mon numero tunisien mais jai peur des frais de rooming",
               "confidence": 0.85,
               "source": "llm_error"
             },
             {
               "op": "language_error_fix",
-              "detail": "'jai' → 'j'ai'",
-              "before": "oui bonjour je veux faire un renvoi d appel de mon zero sept vers mon numero tunisien mais jai peur des frais de roaming",
-              "after": "oui bonjour je veux faire un renvoi d appel de mon zero sept vers mon numero tunisien mais j'ai peur des frais de roaming",
+              "detail": "'rooming' → 'roaming'",
+              "before": "oui bonjour je veux faire un renvoi d’appel de mon zero sept vers mon numero tunisien mais jai peur des frais de rooming",
+              "after": "oui bonjour je veux faire un renvoi d’appel de mon zero sept vers mon numero tunisien mais jai peur des frais de roaming",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
+              "op": "language_error_fix",
+              "detail": "'numero' → 'numéro'",
+              "before": "oui bonjour je veux faire un renvoi d’appel de mon zero sept vers mon numero tunisien mais jai peur des frais de roaming",
+              "after": "oui bonjour je veux faire un renvoi d’appel de mon zero sept vers mon numéro tunisien mais jai peur des frais de roaming",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
+              "op": "language_error_fix",
+              "detail": "'jai' → 'j’ai'",
+              "before": "oui bonjour je veux faire un renvoi d’appel de mon zero sept vers mon numéro tunisien mais jai peur des frais de roaming",
+              "after": "oui bonjour je veux faire un renvoi d’appel de mon zero sept vers mon numéro tunisien mais j’ai peur des frais de roaming",
               "confidence": 0.85,
               "source": "llm_error"
             },
             {
               "op": "punctuation",
               "detail": "Capitalization + ending punctuation",
-              "before": "oui bonjour je veux faire un renvoi d appel de mon zero sept vers mon numero tunisien mais j'ai peur des frais de roaming",
-              "after": "Oui bonjour je veux faire un renvoi d appel de mon zero sept vers mon numero tunisien mais j'ai peur des frais de roaming.",
+              "before": "oui bonjour je veux faire un renvoi d’appel de mon zero sept vers mon numéro tunisien mais j’ai peur des frais de roaming",
+              "after": "Oui bonjour je veux faire un renvoi d’appel de mon zero sept vers mon numéro tunisien mais j’ai peur des frais de roaming.",
               "confidence": 0.8,
               "source": "rule"
             }
@@ -410,18 +564,7 @@
           "start_time": 13.4,
           "end_time": 20.0,
           "speaker": "speaker_0",
-          "original": "d accord vous parlez d un transfert depuis la sim ou depuis la ligne ovh en 09",
-          "edited": "D accord vous parlez d un transfert depuis la SIM ou depuis la ligne OVH en 09.",
           "changed": true,
-          "diagnostics": {
-            "issues": [
-              "missing_punctuation"
-            ],
-            "aliases_detected": [],
-            "numbers_found": [
-              "09"
-            ]
-          },
           "operations": [
             {
               "op": "glossary_normalization",
@@ -440,10 +583,26 @@
               "source": "glossary"
             },
             {
+              "op": "language_error_fix",
+              "detail": "'d accord' → 'd’accord'",
+              "before": "d accord vous parlez d un transfert depuis la SIM ou depuis la ligne OVH en 09",
+              "after": "d’accord vous parlez d un transfert depuis la SIM ou depuis la ligne OVH en 09",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
+              "op": "language_error_fix",
+              "detail": "'d un' → 'd’un'",
+              "before": "d’accord vous parlez d un transfert depuis la SIM ou depuis la ligne OVH en 09",
+              "after": "d’accord vous parlez d’un transfert depuis la SIM ou depuis la ligne OVH en 09",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
               "op": "punctuation",
               "detail": "Capitalization + ending punctuation",
-              "before": "d accord vous parlez d un transfert depuis la SIM ou depuis la ligne OVH en 09",
-              "after": "D accord vous parlez d un transfert depuis la SIM ou depuis la ligne OVH en 09.",
+              "before": "d’accord vous parlez d’un transfert depuis la SIM ou depuis la ligne OVH en 09",
+              "after": "D’accord vous parlez d’un transfert depuis la SIM ou depuis la ligne OVH en 09.",
               "confidence": 0.8,
               "source": "rule"
             }
@@ -454,16 +613,7 @@
           "start_time": 20.1,
           "end_time": 26.0,
           "speaker": "speaker_1",
-          "original": "depuis la sim je crois avec etoile vingt et un et apres le numero",
-          "edited": "Depuis la SIM je crois avec etoile vingt et un et apres le numero.",
           "changed": true,
-          "diagnostics": {
-            "issues": [
-              "missing_punctuation"
-            ],
-            "aliases_detected": [],
-            "numbers_found": []
-          },
           "operations": [
             {
               "op": "glossary_normalization",
@@ -474,10 +624,18 @@
               "source": "glossary"
             },
             {
+              "op": "language_error_fix",
+              "detail": "'numero' → 'numéro'",
+              "before": "depuis la SIM je crois avec etoile vingt et un et apres le numero",
+              "after": "depuis la SIM je crois avec etoile vingt et un et apres le numéro",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
               "op": "punctuation",
               "detail": "Capitalization + ending punctuation",
-              "before": "depuis la SIM je crois avec etoile vingt et un et apres le numero",
-              "after": "Depuis la SIM je crois avec etoile vingt et un et apres le numero.",
+              "before": "depuis la SIM je crois avec etoile vingt et un et apres le numéro",
+              "after": "Depuis la SIM je crois avec etoile vingt et un et apres le numéro.",
               "confidence": 0.8,
               "source": "rule"
             }
@@ -488,16 +646,7 @@
           "start_time": 26.2,
           "end_time": 37.4,
           "speaker": "speaker_0",
-          "original": "ok attention ca peut facturer en fonction de votre operateur mobile on peut plutot faire le renvoi cote ovh c est moins cher souvent",
-          "edited": "Ok attention ça peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi côté OVH c est moins cher souvent.",
           "changed": true,
-          "diagnostics": {
-            "issues": [
-              "missing_punctuation"
-            ],
-            "aliases_detected": [],
-            "numbers_found": []
-          },
           "operations": [
             {
               "op": "glossary_normalization",
@@ -525,25 +674,33 @@
             },
             {
               "op": "language_error_fix",
-              "detail": "'cote' → 'côté'",
+              "detail": "'c est' → 'c’est'",
               "before": "ok attention ca peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi cote OVH c est moins cher souvent",
-              "after": "ok attention ca peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi côté OVH c est moins cher souvent",
+              "after": "ok attention ca peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi cote OVH c’est moins cher souvent",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
+              "op": "language_error_fix",
+              "detail": "'cote' → 'côté'",
+              "before": "ok attention ca peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi cote OVH c’est moins cher souvent",
+              "after": "ok attention ca peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi côté OVH c’est moins cher souvent",
               "confidence": 0.85,
               "source": "llm_error"
             },
             {
               "op": "language_error_fix",
               "detail": "'ca' → 'ça'",
-              "before": "ok attention ca peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi côté OVH c est moins cher souvent",
-              "after": "ok attention ça peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi côté OVH c est moins cher souvent",
+              "before": "ok attention ca peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi côté OVH c’est moins cher souvent",
+              "after": "ok attention ça peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi côté OVH c’est moins cher souvent",
               "confidence": 0.85,
               "source": "llm_error"
             },
             {
               "op": "punctuation",
               "detail": "Capitalization + ending punctuation",
-              "before": "ok attention ça peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi côté OVH c est moins cher souvent",
-              "after": "Ok attention ça peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi côté OVH c est moins cher souvent.",
+              "before": "ok attention ça peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi côté OVH c’est moins cher souvent",
+              "after": "Ok attention ça peut facturer en fonction de votre opérateur mobile on peut plutôt faire le renvoi côté OVH c’est moins cher souvent.",
               "confidence": 0.8,
               "source": "rule"
             }
@@ -554,30 +711,37 @@
           "start_time": 37.6,
           "end_time": 46.0,
           "speaker": "speaker_1",
-          "original": "oui et je veux que les gens voient mon numero pas anonyme parce que jai eu des appels affiches anonymes",
-          "edited": "Oui et je veux que les gens voient mon numero pas anonyme parce que j'ai eu des appels affiches anonymes.",
           "changed": true,
-          "diagnostics": {
-            "issues": [
-              "missing_punctuation"
-            ],
-            "aliases_detected": [],
-            "numbers_found": []
-          },
           "operations": [
             {
               "op": "language_error_fix",
-              "detail": "'jai' → 'j'ai'",
+              "detail": "'appels affiches anonymes' → 'appels affichés anonymes'",
               "before": "oui et je veux que les gens voient mon numero pas anonyme parce que jai eu des appels affiches anonymes",
-              "after": "oui et je veux que les gens voient mon numero pas anonyme parce que j'ai eu des appels affiches anonymes",
+              "after": "oui et je veux que les gens voient mon numero pas anonyme parce que jai eu des appels affichés anonymes",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
+              "op": "language_error_fix",
+              "detail": "'numero' → 'numéro'",
+              "before": "oui et je veux que les gens voient mon numero pas anonyme parce que jai eu des appels affichés anonymes",
+              "after": "oui et je veux que les gens voient mon numéro pas anonyme parce que jai eu des appels affichés anonymes",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
+              "op": "language_error_fix",
+              "detail": "'jai' → 'j’ai'",
+              "before": "oui et je veux que les gens voient mon numéro pas anonyme parce que jai eu des appels affichés anonymes",
+              "after": "oui et je veux que les gens voient mon numéro pas anonyme parce que j’ai eu des appels affichés anonymes",
               "confidence": 0.85,
               "source": "llm_error"
             },
             {
               "op": "punctuation",
               "detail": "Capitalization + ending punctuation",
-              "before": "oui et je veux que les gens voient mon numero pas anonyme parce que j'ai eu des appels affiches anonymes",
-              "after": "Oui et je veux que les gens voient mon numero pas anonyme parce que j'ai eu des appels affiches anonymes.",
+              "before": "oui et je veux que les gens voient mon numéro pas anonyme parce que j’ai eu des appels affichés anonymes",
+              "after": "Oui et je veux que les gens voient mon numéro pas anonyme parce que j’ai eu des appels affichés anonymes.",
               "confidence": 0.8,
               "source": "rule"
             }
@@ -588,16 +752,7 @@
           "start_time": 46.2,
           "end_time": 56.8,
           "speaker": "speaker_0",
-          "original": "on peut verifier l id appelant et aussi le cli sur le trunk mais sans votre config exacte je prefere pas affirmer",
-          "edited": "On peut verifier l ID appelant et aussi le CLI sur le trunk mais sans votre config exacte je prefere pas affirmer.",
           "changed": true,
-          "diagnostics": {
-            "issues": [
-              "missing_punctuation"
-            ],
-            "aliases_detected": [],
-            "numbers_found": []
-          },
           "operations": [
             {
               "op": "glossary_normalization",
@@ -616,10 +771,26 @@
               "source": "glossary"
             },
             {
+              "op": "language_error_fix",
+              "detail": "'verifier' → 'vérifier'",
+              "before": "on peut verifier l ID appelant et aussi le CLI sur le trunk mais sans votre config exacte je prefere pas affirmer",
+              "after": "on peut vérifier l ID appelant et aussi le CLI sur le trunk mais sans votre config exacte je prefere pas affirmer",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
+              "op": "language_error_fix",
+              "detail": "'prefere' → 'préfère'",
+              "before": "on peut vérifier l ID appelant et aussi le CLI sur le trunk mais sans votre config exacte je prefere pas affirmer",
+              "after": "on peut vérifier l ID appelant et aussi le CLI sur le trunk mais sans votre config exacte je préfère pas affirmer",
+              "confidence": 0.85,
+              "source": "llm_error"
+            },
+            {
               "op": "punctuation",
               "detail": "Capitalization + ending punctuation",
-              "before": "on peut verifier l ID appelant et aussi le CLI sur le trunk mais sans votre config exacte je prefere pas affirmer",
-              "after": "On peut verifier l ID appelant et aussi le CLI sur le trunk mais sans votre config exacte je prefere pas affirmer.",
+              "before": "on peut vérifier l ID appelant et aussi le CLI sur le trunk mais sans votre config exacte je préfère pas affirmer",
+              "after": "On peut vérifier l ID appelant et aussi le CLI sur le trunk mais sans votre config exacte je préfère pas affirmer.",
               "confidence": 0.8,
               "source": "rule"
             }
@@ -630,30 +801,21 @@
           "start_time": 57.0,
           "end_time": 60.2,
           "speaker": "speaker_1",
-          "original": "ok vous pouvez menvoyer la doc",
-          "edited": "Ok vous pouvez m'envoyer la doc.",
           "changed": true,
-          "diagnostics": {
-            "issues": [
-              "missing_punctuation"
-            ],
-            "aliases_detected": [],
-            "numbers_found": []
-          },
           "operations": [
             {
               "op": "language_error_fix",
-              "detail": "'menvoyer' → 'm'envoyer'",
+              "detail": "'menvoyer' → 'm’envoyer'",
               "before": "ok vous pouvez menvoyer la doc",
-              "after": "ok vous pouvez m'envoyer la doc",
+              "after": "ok vous pouvez m’envoyer la doc",
               "confidence": 0.85,
               "source": "llm_error"
             },
             {
               "op": "punctuation",
               "detail": "Capitalization + ending punctuation",
-              "before": "ok vous pouvez m'envoyer la doc",
-              "after": "Ok vous pouvez m'envoyer la doc.",
+              "before": "ok vous pouvez m’envoyer la doc",
+              "after": "Ok vous pouvez m’envoyer la doc.",
               "confidence": 0.8,
               "source": "rule"
             }

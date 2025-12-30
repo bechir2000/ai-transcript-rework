@@ -151,42 +151,6 @@ def apply_fixes(text: str, alias_map: Dict[str, str], error_map: Dict[str, str] 
     
     return result, operations
 
-
-def diagnose_segment(text: str, alias_map: Dict[str, str]) -> Dict[str, Any]:
-    """
-    Analyze segment for potential issues (diagnostic only, no fixes).
-    Returns summary of what was found.
-    """
-    issues = []
-    
-    # Missing punctuation
-    t = text.strip()
-    if t and t[-1] not in END_PUNCT:
-        issues.append("missing_punctuation")
-    
-    # Immediate repetition
-    if re.search(r"\b(\w+)\s+\1\b", text, flags=re.IGNORECASE):
-        issues.append("word_repetition")
-    
-    # Glossary aliases present
-    low = _norm(text)
-    aliases_found = []
-    for alias, term in alias_map.items():
-        if alias and alias in low and alias != _norm(term):
-            aliases_found.append({"alias": alias, "canonical": term})
-    if aliases_found:
-        issues.append(f"glossary_aliases_found_{len(aliases_found)}")
-    
-    # Numbers present (protected from edits)
-    numbers = re.findall(r"\d+(?:[.,]\d+)?", text)
-    
-    return {
-        "issues": issues,
-        "aliases_detected": aliases_found,
-        "numbers_found": numbers
-    }
-
-
 def edit_transcript(obj: Dict[str, Any]) -> Dict[str, Any]:
     """
     Apply safe edits to all transcript segments:
@@ -202,16 +166,13 @@ def edit_transcript(obj: Dict[str, Any]) -> Dict[str, Any]:
     ctx = obj.get("context_inferred", {}) or {}
     alias_map = build_alias_map(ctx)
     #print(alias_map)
-    error_map = build_error_map(ctx, min_conf=0.80)  # Only fix high-confidence errors
+    error_map = build_error_map(ctx, min_conf=0.70)  # Only fix high-confidence errors
     #print(error_map)
     edited_messages: List[Dict[str, Any]] = []
     segment_reports: List[Dict[str, Any]] = []
     
     for i, m in enumerate(messages):
         original_content = str(m.get("content", ""))
-        
-        # Diagnose issues (for reporting)
-        diagnostics = diagnose_segment(original_content, alias_map)
         
         # Apply all fixes
         fixed_content, operations = apply_fixes(original_content, alias_map, error_map)
@@ -225,10 +186,7 @@ def edit_transcript(obj: Dict[str, Any]) -> Dict[str, Any]:
             "start_time": m.get("start_time"),
             "end_time": m.get("end_time"),
             "speaker": m.get("speaker"),
-            "original": original_content,
-            "edited": fixed_content,
             "changed": original_content != fixed_content,
-            "diagnostics": diagnostics,
             "operations": [asdict(op) for op in operations]
         })
     
